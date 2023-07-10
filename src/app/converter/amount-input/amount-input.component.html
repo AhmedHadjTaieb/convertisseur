@@ -1,0 +1,10 @@
+<div class="amount">
+  <label class="amount--currency">{{amountCurrency.currency}}</label>
+  <input  type="text"
+          name="amount"
+          class="amount--input"
+          value="{{amountCurrency.amount | currency:amountCurrency.currency}}"
+          (change)="amountChanged($event)"
+          [disabled]="isDisabled"/>
+  <span *ngIf="amountCurrency.symbol" class="amount--symbol">{{amountCurrency.symbol}}</span>
+</div>

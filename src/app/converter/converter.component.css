@@ -1,0 +1,25 @@
+.converter {
+  padding: 16px;
+  background-color: #f3f3f3;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: sans-serif; }
+  .converter--amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    height: 128px; }
+    .converter--amount__converter {
+      height: 42px;
+      margin: 0 6px;
+      border-radius: 50%;
+      transition: .5s ease-in-out;
+      cursor: pointer; }
+      .converter--amount__converter:hover {
+        transform: rotate(75deg);
+        box-shadow: #00BCD4 0px 3px 8px; }
+
+/*# sourceMappingURL=converter.component.css.map */

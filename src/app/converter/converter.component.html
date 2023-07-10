@@ -1,0 +1,18 @@
+
+<div class="converter">
+  <h1>Convertisseur d'argent:</h1>
+  <div class="converter--amount">
+    <app-amount-input [amountCurrency]="activeCurrency" (newAmountEvent)="convertAmount($event)"></app-amount-input>
+    <button class="converter--amount__converter" (click)="toggleCurrency()"><img width="24px"  src="assets/currency-exchange-svgrepo-com.svg"></button>
+    <app-amount-input [amountCurrency]="convertedCurrency" [isDisabled]="true" (newAmountEvent)="convertAmount($event)"></app-amount-input>
+  </div>
+  <div class="converter--rate">
+    <app-rate-input [rate]="exchangeRate"
+                    (onFixedRateChanged)="isFixedRateHandler($event)"
+                    (onFixedRateChangedValue)="fixedRateValueChange($event)">
+    </app-rate-input>
+  </div>
+  <div class="converter--history">
+    <app-history [histories]="history"></app-history>
+  </div>
+</div>

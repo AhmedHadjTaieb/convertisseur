@@ -1,0 +1,27 @@
+<div class="history">
+  <h3 class="history--title">
+    Historique:
+  </h3>
+  <table class="history--table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Devise</th>
+        <th>Taux réel</th>
+        <th>Taux saisi</th>
+        <th>Valeur initiale</th>
+        <th>Valeur calculée</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let history of histories">
+        <td>{{history.dateTime | date:'medium' }}</td>
+        <td>{{history.currency}}</td>
+        <td>{{history.realRate  | number : '1.2'}}</td>
+        <td>{{history.fixedRate  | number : '1.2'}}</td>
+        <td>{{history.initialAmount  | number : '1.2'}}</td>
+        <td>{{history.convertedAmount  | number : '1.2'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

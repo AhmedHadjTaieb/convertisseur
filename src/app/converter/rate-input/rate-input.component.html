@@ -1,0 +1,17 @@
+<div class="rate">
+  <div class="rate--change">
+    <label for="rate--change">
+    Taux:
+    </label>
+    <input *ngIf="isFixedRate; else elseBlock" class="rate--change__input" type="number"
+           [(ngModel)]="rate"
+           (ngModelChange)="checkRateChanged($event)" id="rate--change">
+    <ng-template #elseBlock><span class="rate--change__text">{{rate | number : '1.2'}}</span></ng-template>
+  </div>
+  <div class="rate--fixed" [class.alert]="isFixedRate">
+    <label for="rate--fixed">
+      Taux Forcer
+    </label>
+    <input type="checkbox" id="rate--fixed" [value]="isFixedRate" (change)="fixedRateHandler()" >
+  </div>
+</div>

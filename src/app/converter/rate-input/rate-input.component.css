@@ -1,0 +1,27 @@
+.rate {
+  align-items: center;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 8px; }
+  .rate--change {
+    margin: 4px 8px;
+    font-size: larger; }
+    .rate--change__input {
+      font-size: larger;
+      font-weight: bolder; }
+    .rate--change__text {
+      font-size: 26px;
+      font-weight: bolder; }
+  .rate--fixed {
+    display: block;
+    background-color: lightpink;
+    padding: 4px;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 6px; }
+  .rate .alert {
+    font-weight: bolder;
+    color: orangered; }
+
+/*# sourceMappingURL=rate-input.component.css.map */

@@ -1,0 +1,25 @@
+.amount {
+  display: flex;
+  background-color: #00BCD4;
+  margin: 4px;
+  border: 1px solid #2196F3;
+  width: fit-content;
+  height: 64px;
+  border-radius: 8px;
+  align-items: center;
+  font-size: large; }
+  .amount--currency {
+    margin: auto 6px;
+    font-size: 0.9em; }
+  .amount--input {
+    margin: 2px auto;
+    font-size: medium;
+    height: 32px;
+    font-weight: bold; }
+  .amount--symbol {
+    font-weight: bold;
+    margin: 4px;
+    width: 16px;
+    text-align: center; }
+
+/*# sourceMappingURL=amount-input.component.css.map */
