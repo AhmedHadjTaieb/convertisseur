@@ -13,7 +13,6 @@ export class RateInputComponent implements OnChanges{
   isFixedRate: boolean = false
   initialRate:number = this.rate
   ngOnChanges(){
-    console.log("ngOnChanges")
     this.initialRate = this.rate
   }
   checkRateChanged(event: Event){

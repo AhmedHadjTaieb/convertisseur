@@ -119,6 +119,5 @@ export class ConverterComponent implements OnInit, OnDestroy {
     if (this.history.length > 5) {
       this.history.pop();
     }
-    console.log(this.history)
   }
 }
